@@ -1430,28 +1430,18 @@ ul {
 
 /* ─── RESPONSIVE ────────────────────────────────────────────── */
 @media (max-width: 900px) {
-  .services-grid {
-    grid-template-columns: 1fr;
+  .services-grid  { grid-template-columns: 1fr; }
+  .portfolio-grid { grid-template-columns: 1fr 1fr; }
+  .about-layout   { grid-template-columns: 1fr; gap: 40px; }
+  
+  /* Retain the premium 4:5 ratio on mobile, just scale down the width beautifully */
+  .about-img-wrap { 
+    max-width: 340px; 
+    margin-inline: auto; /* Perfectly centers your photo on mobile screens */
+    aspect-ratio: 4/5 !important; 
   }
-
-  .portfolio-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .about-layout {
-    grid-template-columns: 1fr;
-    gap: 60px;
-  }
-
-  .about-img-wrap {
-    max-width: 100%;
-    aspect-ratio: 3/2;
-  }
-
-  .footer-layout {
-    flex-direction: column;
-    text-align: center;
-  }
+  
+  .footer-layout  { flex-direction: column; text-align: center; }
 }
 
 @media (max-width: 660px) {
