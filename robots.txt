@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aftercuts.studio/sitemap.xml
+Sitemap: https://abdulmuqeem956.github.io/After-Cuts-Studio/sitemap.xml
